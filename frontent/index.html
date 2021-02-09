@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>EvjupirBot</title>
+  <meta name="description" content="Frontend für den EvjupirBot" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+      <div class="container-fluid d-flex flex-column p-0">
+        <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+          <div>
+            <img class="rounded-circle" src="assets/img/evjupir.png" style="height: 40px" />
+          </div>
+          <div class="sidebar-brand-text mx-3"><span>EvjupirBot</span></div>
+        </a>
+        <hr class="sidebar-divider my-0" />
+        <ul class="nav navbar-nav text-light" id="accordionSidebar">
+          <li class="nav-item" style="border-style: none">
+            <button class="nav-button" id="nav-button-startseite">
+              <i class="fas fa-home"></i><span>&nbsp;Status</span>
+            </button>
+          </li>
+          <li class="nav-item hidden">
+            <button class="nav-button" id="nav-button-mute-channels">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                class="bi bi-mic-mute-fill">
+                <path fill-rule="evenodd"
+                  d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z">
+                </path>
+              </svg>
+              <span>&nbsp;Kanäle muten</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="d-flex flex-column" id="content-wrapper" style="padding: 20px">
+      <div id="content">
+        <div id="startseite">
+          <div class="container-fluid">
+            <div class="d-sm-flex justify-content-between align-items-center mb-4">
+              <h3 class="text-dark mb-0">Startseite</h3>
+            </div>
+            <div>
+              <div class="card border-primary border rounded">
+                <div class="card-body">
+                  <header style="
+                        margin-bottom: 6px;
+                        text-align: center;
+                        font-size: 28px;
+                      ">
+                    <span>Status</span>
+                  </header>
+                  <div id="status" class="col" style="
+                        text-align: center;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        padding: 25px;
+                        margin-bottom: 8px;
+                        background: rgb(160, 0, 0);
+                      ">
+                    <span id="status-label" style="color: var(--light); font-size: 40px">Offline</span>
+                  </div>
+                  <div class="card">
+                    <div class="card-body"><span>Um diesen Bot nutzen zu können, musst du das Backend-Programm auf deinem PC laufen haben. Starte dieses, und lade diese Statusseite neu.</span>
+                    </div>
+                  </div>
+                  <button id="update-status" class="btn btn-outline-secondary btn-block btn-sm text-center" style="margin-top: 5px;"
+                    type="button">
+                    Neu Laden
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="mute-channels" style="display: none">
+          <div class="container-fluid">
+            <div class="d-sm-flex justify-content-between align-items-center mb-4">
+              <h3 class="text-dark mb-0">Kanäle muten</h3>
+            </div>
+          </div>
+          <div id="channelContainer"></div>
+        </div>
+      </div>
+      <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+          <div class="text-center my-auto copyright">
+            <span>Copyright © Elias Bistry 2021</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <script src="assets/js/ejs.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

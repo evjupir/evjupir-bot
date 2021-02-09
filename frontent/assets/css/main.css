@@ -1,0 +1,43 @@
+.nav-button {
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+}
+
+.nav-button:hover {
+    color: rgb(42, 42, 42);
+}
+
+.nav-button:focus {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#startseite {
+    inherits: true;
+}
+
+#muted-channels {
+    inherits: true;
+}
+
+.col-channel {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 5px;
+    padding-bottom: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.muted div{
+    background-color: rgb(164, 164, 164);
+    color: white;
+}
